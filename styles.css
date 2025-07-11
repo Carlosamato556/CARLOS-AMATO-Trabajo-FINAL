@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacto {
+  background-color: #2a2a2a;
+  margin: 10px 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+.info-contacto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nombre {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+.datos {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+.boton {
+  background-color: #7a6ff0;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton:hover {
+  background-color: #998ff7;
+}
+
+/*estilo whatsApp */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-header {
+  background-color: #1f1f1f;
+  padding: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #444;
+}
+
+.volver {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.chat-mensajes {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mensaje {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #333;
+  align-self: flex-end;
+}
+
+.mensaje-contacto {
+  background-color: #444;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: #1f1f1f;
+  border-top: 1px solid #444;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chat-input button {
+  background-color: #7a6ff0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}

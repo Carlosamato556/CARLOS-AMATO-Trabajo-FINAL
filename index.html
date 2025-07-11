@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tus Contactos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" id="vista-contactos">
+    <h2 class="titulo"><span class="icon">👥</span> LISTA DE CONTACTOS</h2>
+    <div class="contacto-lista" id="lista-contactos">
+      <!-- Contactos por JS -->
+    </div>
+  </div>
+
+  <div class="container chat" id="vista-chat" style="display: none">
+    <div class="chat-header">
+      <button onclick="volver()" class="volver">⬅️</button>
+      <span id="nombre-contacto-chat"></span>
+    </div>
+    <div class="chat-mensajes" id="chat-mensajes"></div>
+    <div class="chat-input">
+      <input type="text" id="mensaje" placeholder="Escribí tu mensaje..." />
+      <button onclick="enviarMensaje()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
